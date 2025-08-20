@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2cb22c71-d65b-438f-8f73-d57caac6fa38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/config/ComponentConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/config/ComponentConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/controller/DepartmentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/controller/DepartmentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/dto/AccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/dto/AccountDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/dto/DepartmentDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/dto/DepartmentDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/form/DepartmentFilterForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/form/DepartmentFilterForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/repository/IDepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/repository/IDepartmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/service/DepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/service/DepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/service/IDepartmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/service/IDepartmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/specification/DepartmentSpecification.java" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/java/com/npq/department_service/specification/DepartmentSpecification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/mysql/init.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31RUGmMD55lGb3kFVPHvSHPjK9h" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/phamquynam/tailieu/JAVA_FULLSTACK/2. recording/4. MicroService/project/microservice_project/department-service/src/main/java/com/npq/department_service/service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.38850576&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Acer\Documents\phamquynam\tailieu\JAVA_FULLSTACK\2. recording\4. MicroService\project\microservice_project\department-service\src\main\java\com\npq\department_service\service" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.npq.department_service.controller" />
+      <recent name="com.npq.department_service.dto" />
+      <recent name="com.npq.department_service.entity" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cb22c71-d65b-438f-8f73-d57caac6fa38" name="Changes" comment="" />
+      <created>1755486287304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755486287304</updated>
+    </task>
+    <servers />
+  </component>
+</project>

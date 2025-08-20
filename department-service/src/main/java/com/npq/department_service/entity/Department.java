@@ -24,7 +24,7 @@ public class Department {
     @Column(name = "totalMember")
     private int totalMember;
 
-    @Column(name = "type", columnDefinition = "ENUM('DEV','TEST','SCRUM_MASTER', 'PM)")
+    @Column(name = "type", columnDefinition = "ENUM('DEV','TEST','SCRUM_MASTER', 'PM')")
     @Enumerated(EnumType.STRING)
     private DepartmentType type;
 
@@ -40,7 +40,7 @@ public class Department {
 
         public static DepartmentType toEnum(String type){
             for(DepartmentType item: values()){
-                if(item.toString().equals(values())) return  item;
+                if(item.toString().equals(type)) return  item;
             }
             return null;
         }
