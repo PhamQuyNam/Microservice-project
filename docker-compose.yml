@@ -15,6 +15,27 @@ services:
       - ./mysql/mysql-data:/var/lib/mysql
     networks:
       - spring-microservice
+
+  auth-service:
+    container_name: auth-service
+    build:
+      context: ./auth-service
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    depends_on:
+      - mysql
+    networks:
+      - spring-microservice
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/microservice?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimeZone=UTC
+      SPRING_DATASOURCE_USERNAME: nampq
+      SPRING_DATASOURCE_PASSWORD: 123456
+      SPRING_APPLICATION_NAME: auth-service
+      SERVER_PORT: 8082
+      TOKEN_SECRET: ${TOKEN_SECRET}
+
+
   department-service:
     container_name: department-service
     build:
@@ -50,6 +71,7 @@ services:
       TOKEN_SECRET: ${TOKEN_SECRET}
     networks:
       - spring-microservice
+
 
 networks:
   spring-microservice:
