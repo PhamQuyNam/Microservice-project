@@ -1,4 +1,15 @@
 services:
+  eureka-server:
+    container_name: eureka-server
+    build:
+      context: ./eureka-server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8761:8761"
+    networks:
+      - spring-microservice
+
   mysql:
     container_name: mysql
     build:
@@ -25,6 +36,7 @@ services:
       - "8082:8082"
     depends_on:
       - mysql
+      - eureka-server
     networks:
       - spring-microservice
     environment:
@@ -35,7 +47,6 @@ services:
       SERVER_PORT: 8082
       TOKEN_SECRET: ${TOKEN_SECRET}
 
-
   department-service:
     container_name: department-service
     build:
@@ -43,8 +54,9 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-#    depends_on:
-#      - mysql
+    depends_on:
+      - mysql
+      - eureka-server
     networks:
       - spring-microservice
     environment:
@@ -52,7 +64,7 @@ services:
       SPRING_DATASOURCE_USERNAME: nampq
       SPRING_DATASOURCE_PASSWORD: 123456
       SPRING_APPLICATION_NAME: department-service
-      TOKEN_SECRET: ${TOKEN_SECRET}
+
 
   account-service:
     build:
@@ -62,15 +74,31 @@ services:
     ports:
       - "8081:8081"
     depends_on:
+      - eureka-server
       - mysql
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/microservice?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimeZone=UTC
       SPRING_DATASOURCE_USERNAME: nampq
       SPRING_DATASOURCE_PASSWORD: 123456
       SPRING_APPLICATION_NAME: account-service
-      TOKEN_SECRET: ${TOKEN_SECRET}
+
     networks:
       - spring-microservice
+
+  api-gateway:
+    container_name: api-gateway
+    build:
+      context: ./api-gateway
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8762:8762"
+    depends_on:
+      - eureka-server
+    networks:
+      - spring-microservice
+    environment:
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://eureka-server:8761/eureka/
 
 
 networks:
