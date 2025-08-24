@@ -6,6 +6,7 @@ import com.npq.account_service.service.IAccountService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,6 +25,11 @@ public class AccountController {
                 accounts,
                 new TypeToken<List<AccountDTO>>() {}.getType());
         return listAccountDTO;
+    }
+
+    @GetMapping("hello")
+    public String hello(){
+        return "hello";
     }
 
 }
