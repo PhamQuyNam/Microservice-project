@@ -29,7 +29,7 @@ public class AuthenticationFilter implements GatewayFilter {
             throw new CustomException(HttpStatus.UNAUTHORIZED, "Authorization header is missing in request");
         }
         final String authHeader = this.getAuthHeader(request);
-        if (authHeader == null || !authHeader.startsWith("Bear")) {
+        if (authHeader == null || !authHeader.startsWith("Bearer")) {
             throw new CustomException(HttpStatus.UNAUTHORIZED, "Authorization header method is incorrect");
         }
         String token = authHeader.substring(7);

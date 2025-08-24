@@ -8,5 +8,5 @@ import org.springframework.data.domain.Pageable;
 public interface IDepartmentService {
     public Page<Department> getAllDepartments(Pageable pageable, String search, DepartmentFilterForm filterForm);
 
-    public Department getDepartmentByID(int id);
+    public Department getDepartmentById(int id);
 }

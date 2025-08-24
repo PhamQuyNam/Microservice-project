@@ -27,6 +27,21 @@ services:
     networks:
       - spring-microservice
 
+  config-service:
+    container_name: config-service
+    build:
+      context: ./config-service
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8763:8763"
+    depends_on:
+      - eureka-server
+    networks:
+      - spring-microservice
+    environment:
+      EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE: http://eureka-server:8761/eureka/
+
   auth-service:
     container_name: auth-service
     build:
@@ -37,6 +52,7 @@ services:
     depends_on:
       - mysql
       - eureka-server
+      - config-service
     networks:
       - spring-microservice
     environment:
@@ -57,6 +73,7 @@ services:
     depends_on:
       - mysql
       - eureka-server
+      - config-service
     networks:
       - spring-microservice
     environment:
@@ -65,6 +82,24 @@ services:
       SPRING_DATASOURCE_PASSWORD: 123456
       SPRING_APPLICATION_NAME: department-service
 
+  department-service-1:
+    container_name: department-service-1
+    build:
+      context: ./department-service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8080"
+    depends_on:
+      - mysql
+      - eureka-server
+      - config-service
+    networks:
+      - spring-microservice
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/microservice?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimeZone=UTC
+      SPRING_DATASOURCE_USERNAME: nampq
+      SPRING_DATASOURCE_PASSWORD: 123456
+      SPRING_APPLICATION_NAME: department-service
 
   account-service:
     build:
@@ -74,8 +109,9 @@ services:
     ports:
       - "8081:8081"
     depends_on:
-      - eureka-server
       - mysql
+      - eureka-server
+      - config-service
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/microservice?createDatabaseIfNotExist=true&characterEncoding=UTF-8&serverTimeZone=UTC
       SPRING_DATASOURCE_USERNAME: nampq
@@ -95,6 +131,8 @@ services:
       - "8762:8762"
     depends_on:
       - eureka-server
+      - mysql
+      - config-service
     networks:
       - spring-microservice
     environment:
