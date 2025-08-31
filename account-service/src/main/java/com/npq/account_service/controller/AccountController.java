@@ -10,10 +10,14 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
+<<<<<<< HEAD
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+=======
+import org.springframework.web.bind.annotation.GetMapping;
+>>>>>>> f0ba6041cdd33529de00c33a07cbf2ec4bec1f9b
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -42,6 +46,7 @@ public class AccountController {
         return listAccountDTO;
     }
 
+<<<<<<< HEAD
     @GetMapping("/hello")
     public String hello(){
         return greetingText;
@@ -56,4 +61,11 @@ public class AccountController {
         log.info("Department DTO: {}",departmentDTO);
         return departmentDTO;
     }
+=======
+    @GetMapping("hello")
+    public String hello(){
+        return "hello";
+    }
+
+>>>>>>> f0ba6041cdd33529de00c33a07cbf2ec4bec1f9b
 }

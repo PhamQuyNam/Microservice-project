@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2cb22c71-d65b-438f-8f73-d57caac6fa38" name="Changes" comment="commit5">
       <change afterPath="$PROJECT_DIR$/mysql/mysql-data/#ib_16384_0.dblwr" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysql/mysql-data/#innodb_redo/#ib_redo11_tmp" afterDir="false" />
@@ -160,6 +161,19 @@
       <change afterPath="$PROJECT_DIR$/mysql/mysql-data/server-key.pem" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysql/mysql-data/sys/sys_config.ibd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mysql/mysql-data/undo_001" afterDir="false" />
+=======
+    <list default="true" id="2cb22c71-d65b-438f-8f73-d57caac6fa38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account-service/src/main/java/com/npq/account_service/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/account-service/src/main/java/com/npq/account_service/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+>>>>>>> f0ba6041cdd33529de00c33a07cbf2ec4bec1f9b
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,16 +207,25 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;Application.AccountServiceApplication.executor&quot;: &quot;Debug&quot;,
     &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;Application.DepartmentServiceApplication.executor&quot;: &quot;Debug&quot;,
+=======
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Run&quot;,
+>>>>>>> f0ba6041cdd33529de00c33a07cbf2ec4bec1f9b
     &quot;Docker.docker-compose.yml.auth-service: Compose Deployment.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/phamquynam/tailieu/JAVA_FULLSTACK/2. recording/4. MicroService/project/microservice_project&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Acer/Documents/phamquynam/tailieu/JAVA_FULLSTACK/2. recording/4. MicroService/project/microservice_project/auth-service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+>>>>>>> f0ba6041cdd33529de00c33a07cbf2ec4bec1f9b
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.38850576&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
